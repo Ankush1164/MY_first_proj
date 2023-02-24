@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry | Payment</title>
+    
+    <!-- Link favicon icon -->
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm4BabRScqSXjQFPblbqjFOX315hzQk5Dj_g&usqp=CAU" type="image/x-icon">
+
+    <!-- Link externl css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Link Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Julee&family=Poppins&family=Ubuntu&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">
+                <img src="./web_logo.png" alt="" srcset="">
+            </a>
+            <div class="search_field">
+                <input type="search" placeholder="Search">
+            </div>
+            <button>Order Now</button>
+        </nav>
+    </header>
+    <div class="food_catagories">
+        <div class="home_page">
+            <a href="./index.html"><img src="./homepage.png" alt="" srcset=""><br>Home Page</a>
+        </div>
+    </div>
+    <main class="paymentpage">
+            <div class="form">
+                <label for="">Name</label>
+                <input type="text"><br>
+                <label for="">Email</label>
+                <input type="email"><br>
+                <label for="">Address</label>
+                <textarea></textarea><br>
+                <label for="">Phone No</label>
+                <input type="number" name=""><br>
+                <hr><br>
+                <label for="">Select Floor</label><br>
+                <div class="floor_Section">
+                    <label for="">Enter Floor Num.</label>
+                    <input type="text"><br>
+                </div><br><hr><br>
+                <label for="">Payment Method</label>
+                <br>
+                <div class="cashondelivery">
+                    <label for="">Only Cash On Delivery Avalabile</label>
+                </div><br>
+                <div class="confirmbtn">
+                   <button onclick="payment()">Confirm Order</button></a>
+                    <p id="pera"></p>
+                </div>
+                
+            </div>
+    </main>
+</body>
+<script>
+    function payment(){
+        document.getElementById("pera").innerHTML="Wait a Seconds...";
+        setTimeout(() => {
+            window.open("https://assets.materialup.com/uploads/9157d69a-f77a-4dd7-8efa-0dbcf2dca0f5/preview.gif")
+        }, 2000);
+    }
+</script>
+
+</html>

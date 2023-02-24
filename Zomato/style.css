@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    padding: 8px;
+    width: 100%;
+}
+header nav .search_field{
+    display: flex;
+    width: 500px;
+}
+header nav .search_field input{
+    display: flex;
+    flex-grow: 1;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 4px #000000;
+}
+header nav img{
+    height: 50px;
+    width:120px;
+}
+header nav button{
+    padding: 5px 15px 5px 15px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.food_catagories{
+    display: flex;
+    border-bottom: 2px solid #98fb98;
+    padding: 15px;
+    width: 400px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.food_catagories .item1{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.food_catagories .item1 a{
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+.food_catagories .item1 img{
+    height: 80px;
+    width: 80px;
+    background-color: #f5f5f5;
+    border-radius:30px;
+}
+.food_catagories .item2{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.food_catagories .item2 a{
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+.food_catagories .item2 img{
+    height: 80px;
+    width: 80px;
+    background-color: #f5f5f5;
+    border-radius:30px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+main .card_container{
+    padding: 10px;
+    width: 280px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 0px 4px #000000;
+    cursor: pointer;
+}
+main .card_container .card_image{
+    height: 200px;
+    width: 100%;
+
+}
+main .card_container .card_image img{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+}
+main .card_container p{
+    font-size: 13px;
+    color: #ff0000;
+    font-weight: 500;
+}
+footer{
+    padding: 20px;
+    width: 100%;
+    background-color: #f5f5f5;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+footer .adrees_Section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+footer .items_Section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .items_Section ul{
+    list-style: none;
+}
+footer .items_Section ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+footer .items_Section ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+}
+footer .Email_Section input{
+    height: 30px;
+    padding-left: 10px;
+}
+footer .Email_Section button{
+    height: 30px;
+    padding: 0px 15px 0px 15px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Vegitems css */
+.food_catagories  .home_page{
+    display: flex;
+    flex-direction: column;
+}
+.food_catagories  .home_page img{
+    height: 60px;
+    width: 60px;
+    background-color: #f5f5f5;
+    border-radius:30px;
+}
+.food_catagories  .home_page a{
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+}
+main .card_container button{
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* pizzaspage css */
+
+.pizamain{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    padding-top: 50px;
+}
+.pizamain .itmes_titlecontainer{
+    display: flex;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 15px;
+    gap: 40px;
+}
+.pizamain .food_image{
+    display: flex;
+    align-items: center;
+}
+.pizamain .food_image img{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+}
+.pizamain .food_title{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-grow: 1;
+}
+.pizamain .food_title .food_inputfield button{
+    padding: 5px 10px 5px 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Payment Page css */
+.paymentpage{
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+.paymentpage .form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color:whitesmoke;
+    border-radius: 10px;
+    gap: 2px;
+    width: 400px;
+    box-shadow: 0px 0px 5px #000000;
+}
+.paymentpage .form input{
+    height: 35px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    outline: none;
+}
+.paymentpage .form .floor_Section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.paymentpage .form .confirmbtn{
+    width: 120px;
+    margin: auto;
+}
+.paymentpage .form .confirmbtn button{
+    margin: auto;
+    padding: 8px 12px 8px 12px;
+    background-color: rgb(89, 219, 89);
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+}
+.paymentpage .form .confirmbtn p{
+    font-size: 12px;
+    margin-top: 10px;
+    color: #ff0000;
+}
+/* Media Queries */
+
+@media screen and (max-width:600px){
+    header nav{
+        display: flex;
+    }
+    header nav img{
+        height: 40px;
+        width: 80px;
+    }
+    header nav .search_field{
+        display: flex;
+        width: 200px;
+    }
+    header nav button{
+        display: none;
+    }
+    .food_catagories{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    main{
+        padding: 10px;
+    }
+    main .card_container{
+        width: 100%;
+    }
+    main .card_container h1{
+        font-size: 20px;
+    }
+    .food_catagories .item1 img{
+        height: 50px;
+        width: 50px;
+        border-radius: 15px;
+    }
+    .food_catagories .item2 img{
+        height: 40px;
+        width: 40px;
+        border-radius: 15px; 
+    }
+    .food_catagories  .home_page img{
+        height: 40px;
+        width: 40px;
+        border-radius: 15px; 
+    }
+    .food_catagories  .home_page a{
+        text-align: center;
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer .items_Section ul{
+        display: none;
+    }
+    footer .Email_Section{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .pizamain{
+        width: 100%;
+    }
+    .pizamain .itmes_titlecontainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .pizamain .itmes_titlecontainer h1{
+        font-size: 28px;
+    }
+    .pizamain .food_image img{
+        width: 100%;
+    }
+    .paymentpage{
+        width: 100%;
+        padding: 20px;
+    }
+    .paymentpage form .form{
+        width: 100%;
+    }
+    .paymentpage form .form input{
+        width: 100%;
+    }
+
+}
