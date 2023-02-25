@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #f0f4f5;
+    overflow: hidden;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+header nav img{
+    height: 43px;
+    width: 132px;
+    margin-left: 85px;
+}
+header nav ul{
+    display: flex;
+    margin-right: 90px;
+}
+header nav ul li{
+    display: flex;
+    gap: 35px;
+}
+header nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+header nav ul li a:hover{
+    border-bottom: 2px solid #20bc7e;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main section .left_section{
+    width: 530px;
+    flex-direction: column;
+    padding: 50px;
+}
+main section .btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+main section .btn button{
+    height: 45px;
+    width: 200px;
+    border-radius: 25px;
+    background-color: #20bc7e;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+main section .btn button:hover{
+    background-color: #fff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #000000;
+}
+main section .left_section h1{
+    font-size: 50px;
+}
+main section .right_section {
+    margin-left: 85px;
+}
+main section .right_section .bg{
+    height: 80px;
+    width: 80px;
+    margin-top: 50px;
+    position: absolute;
+    z-index: -1;
+    
+}
+main section .right_section .img1{
+    position: absolute;
+    z-index: 1;
+    height: 480px;
+    width: 480px;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+main section .right_section .img2{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    margin-top: 150px;
+    margin-left: 150px;
+}
+main section .right_section img{
+    height:570px;
+    width: 570px;
+}
+main .setchoscope{
+    display: flex;
+    z-index: -1;
+    position: absolute;
+    background-image: url("stethoscope.png");
+    height: 600px;
+    width: 600px;
+    margin-left: -150px;
+    margin-top: -600px;
+    background-size: cover;
+}

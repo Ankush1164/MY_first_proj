@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./styling.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="showitems" id="box">
+            <div class="cross">
+                <ion-icon name="close-outline" id="cut" onclick="hideitems()"></ion-icon>
+            </div>
+            
+            <ul>
+                <li><a href="#">Apps</a>
+                    <a href="#">DAD</a>
+                    <a href="#">Technology</a>
+                    <a href="#">Token</a>
+                    <a href="#">Contibuter</a>
+                </li>
+            </ul>
+            <a href="http://ankushdh.unaux.com/?i=1"><button>Buy 1 tokken</button></a>
+        </div>
+        <nav>
+            <img src="logo.png" alt="site logo" class="image">
+            <ul>
+                <li><a href="#">Apps</a>
+                    <a href="#">DAD</a>
+                    <a href="#">Technology</a>
+                    <a href="#">Token</a>
+                    <a href="#">Contibuter</a>
+                </li>
+            </ul>
+            <a href="http://ankushdh.unaux.com/?i=1"><button>Buy 1 Tokken</button></a>
+            <ion-icon name="ellipsis-vertical-outline" id="hamburgermenu" onclick="showitem()"></ion-icon>
+        </nav>
+    </header>
+    <main>
+        <h1>Lets build a better tomorrow,together.</h1>
+        <p>Buy 1 Tokken. Join the DAO. Change the world</p>
+        <div class="btn">
+            <button>Request Early Access</button>
+        </div>
+        
+    </main>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    function showitem(){
+        document.getElementById("box").style.width="220px";
+    }
+    function hideitems(){
+        document.getElementById("box").style.width="0px";
+    }
+</script>
+</html>

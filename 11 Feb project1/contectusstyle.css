@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #f0f4f5;
+    overflow: hidden;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+header nav img{
+    height: 43px;
+    width: 132px;
+    margin-left: 85px;
+}
+header nav ul{
+    display: flex;
+    margin-right: 90px;
+}
+header nav ul li{
+    display: flex;
+    gap: 35px;
+}
+header nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+header nav ul li a:hover{
+    border-bottom: 2px solid #20bc7e;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .contact_form{
+    height: 350px;
+    width: 270px;
+    background-color: #f0f4f5;
+    margin-top: 110px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #000000;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+main .contact_form h3{
+    text-align: center;
+    padding: 8px;
+}
+main .contact_form input{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding:5px;
+}
+main .contact_form input[type="submit"]{
+    background-color: #20bc7e;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
